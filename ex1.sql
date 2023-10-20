@@ -14,6 +14,11 @@ CREATE TABLE IF NOT EXISTS Voitures (
     Propriétaire VARCHAR(100)
 );
 
+INSERT INTO Voitures (Marque, Modèle, Année, Couleur, Prix, DateFabrication, DateAchat, Propriétaire)
+Values
+    ('Citroen', 'C3', '2008', 'Blanc', '10000e', '2008', '2015', 'Dupont'),
+    ('Tesla', 'S', '2020', 'Blanc', '50000e', '2020', '2023', 'Arnault');
+
 SHOW DATABASES;
 SHOW TABLES;
 DESCRIBE Voitures;
