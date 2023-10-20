@@ -11,13 +11,14 @@ CREATE TABLE IF NOT EXISTS Voitures (
     Prix DECIMAL(10, 2),
     DateFabrication DATE,
     DateAchat DATE,
-    Propriétaire VARCHAR(100)
+    Propriétaire VARCHAR(100),
+    Assurance BOOLEAN
 );
 
-INSERT INTO Voitures (Marque, Modèle, Année, Couleur, Prix, DateFabrication, DateAchat, Propriétaire)
+INSERT INTO Voitures (Marque, Modèle, Année, Couleur, Prix, DateFabrication, DateAchat, Propriétaire, Assurance)
 Values
-    ('Citroen', 'C3', '2008', 'Blanc', '10000e', '2008', '2015', 'Dupont'),
-    ('Tesla', 'S', '2020', 'Blanc', '50000e', '2020', '2023', 'Arnault');
+    ('Citroen', 'C3', '2008', 'Blanc', '10000e', '2008', '2015', 'Dupont', 'Vrai'),
+    ('Tesla', 'S', '2020', 'Blanc', '50000e', '2020', '2023', 'Arnault', 'Vrai');
 
 SHOW DATABASES;
 SHOW TABLES;
